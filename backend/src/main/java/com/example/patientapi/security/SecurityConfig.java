@@ -55,7 +55,7 @@ public class SecurityConfig {
                                 "/v3/api-docs/**",
                                 "/error"
                         ).permitAll()
-                        .requestMatchers("/api/patients/**").hasRole("ADMIN")
+                        .requestMatchers("/api/patients/**").hasAnyRole("USER","ADMIN")
                         .anyRequest().authenticated()
                 )
 
