@@ -72,6 +72,7 @@ mvn spring-boot:run
 Backend:
 
 http://localhost:8080
+
 4. Swagger / OpenAPI
 
 After starting the backend, open:
@@ -111,6 +112,7 @@ frontend/src/api/api.js
 Make sure the backend URL is configured correctly:
 
 baseURL: "http://localhost:8080"
+
 7. Login
 
 Use the test account provided in the database script.
