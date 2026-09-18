@@ -175,7 +175,18 @@ Authorization controls which operations a user can perform.
 
 For example, administrative operations can be restricted to users with the ADMIN role.
 
-Application Features
+## status code
+401 Unauthorized: The user is not authenticated or the JWT is invalid. 
+
+403 Forbidden: The user is authenticated but does not have permission. 
+
+404 Not Found: The requested patient does not exist. 
+
+400 Bad Request: The submitted information is invalid. 
+
+500 Internal Server Error: An unexpected backend problem occurred. 
+
+## Application Features
 
 Authentication
 
