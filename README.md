@@ -100,11 +100,11 @@ Swagger can be used to view and test
 
 provides documentation and testing for the REST API.
 
-1.Enter username and password 
+1.Enter username and password based on role
 
 2.Generate token
 
-3.Authorize admin or user
+3.Authorize any role (admin or user)
 
 4.Then you can test GET, PUT, POST, DELETE
 
@@ -164,9 +164,9 @@ Backend validates the token before allowing access.
 
 Example roles:
 
-USER
+1. USER   Password:User@123
 
-ADMIN
+2. ADMIN    Password:Admin@123
 
 Authorization controls which operations a user can perform.
 
