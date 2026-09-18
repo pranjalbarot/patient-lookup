@@ -51,8 +51,11 @@ backend/src/main/resources/application.properties
 Update the PostgreSQL configuration:
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/patient_lookup
+
 spring.datasource.username=YOUR_USERNAME
+
 spring.datasource.password=YOUR_PASSWORD
+
 Replace YOUR_USERNAME and YOUR_PASSWORD with your local PostgreSQL credentials.
 
 ## 3. Database Schema
