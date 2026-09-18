@@ -120,6 +120,8 @@ cd frontend
 Install dependencies:
 npm install
 
+npm install axios
+
 Start the frontendapplication:
 npm run dev
 
