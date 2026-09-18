@@ -42,7 +42,7 @@ Run schema.sql against the patient_lookup database if your application is config
 ### One important point
 If your `schema.sql` is automatically executed by Spring Boot, the person setting up the project **doesn't need to manually run the file**. Spring Boot can initialize the database when the backend starts, depending on your configuration.
 
-Backend Setup
+## 4. Backend Setup
 ##1. Open Backend
 cd backend
 
@@ -63,7 +63,7 @@ mvn spring-boot:run
 The backend runs on:
 http://localhost:8080
 
-## 4. Test REST API using Swagger / OpenAPI
+## 5. Test REST API using Swagger / OpenAPI
 After starting the backend, open:
 http://localhost:8080/swagger-ui/index.html
 Swagger can be used to view and test
@@ -75,7 +75,7 @@ Authorize admin or user
 Then you can test GET, PUT, POST, DELETE
 Admin is allowed for DELETE operation while user can't
 
-##Frontend Setup
+## 6. Frontend Setup
 Open anothera new terminal.:
 Go to the frontend folder:
 cd frontend
@@ -86,7 +86,7 @@ npm run dev
 The frontend normally runs at:
 http://localhost:5173
 
-##API Configuration
+## 7. API Configuration
 Open the URL shown in the terminal.
 The frontend communicates with the Spring Boot backend through Axios.
 Check:
@@ -94,10 +94,10 @@ frontend/src/api/api.js
 Make sure the API URL points to:
 baseURL: "http://localhost:8080"
 
-##Authentication
+## 8. Authentication
 The application uses JWT-based authentication.
 
-##The login process works as follows:
+## 9. The login process works as follows:
 User enters username and password.
 Frontend sends the credentials to the backend.
 Backend validates the credentials.
@@ -107,7 +107,7 @@ The token is sent with protected API requests.
 Backend validates the token before allowing access.
 Authorization
 
-##The application supports role-based authorization.
+## 10. The application supports role-based authorization.
 Example roles:
 USER
 ADMIN
